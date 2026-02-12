@@ -9,12 +9,23 @@ setInterval(() => {
 }, 400);
 
 /* Music */
+
 const music = document.getElementById("bgMusic");
 let playing = false;
-function toggleMusic() {
-  playing ? music.pause() : music.play();
-  playing = !playing;
-}
+
+document.addEventListener("click", (e) => {
+  // Optional: ignore buttons if you want
+  if (e.target.closest("button")) return;
+
+  if (!playing) {
+    music.play();
+    playing = true;
+  } else {
+    music.pause();
+    playing = false;
+  }
+});
+
 
 /* Typing */
 const typingName = document.getElementById("typingName");
