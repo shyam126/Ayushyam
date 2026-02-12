@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Hug Day Buggiiii ❤️</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+  <div class="container">
+    <div class="name"><span id="typingName"></span></div>
+    <p class="subtitle">My safest place is always with you</p>
+
+    <!-- Hug Animation -->
+    <div class="hug-anim">
+      <div class="arm left"></div>
+      <div class="heart">❤️</div>
+      <div class="arm right"></div>
+    </div>
+
+    <!-- Photo -->
+    <div class="photo-wrapper">
+      <div class="photo-ring">
+        <img src="pic/love3.png" alt="photo">
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards-wrapper">
+      <button class="arrow left" onclick="scrollCards(-1)">‹</button>
+      <button class="arrow right" onclick="scrollCards(1)">›</button>
+
+      <div class="cards" id="cards">
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap 💕</div>
+          <div class="card-face card-back"><img src="pic/love1.jpeg"><p>Your hugs make everything better.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap ❤️</div>
+          <div class="card-face card-back"><img src="pic/love2.jpeg"><p>I feel home when I’m with you.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap 🤗</div>
+          <div class="card-face card-back"><img src="pic/love3.png"><p>Every hug from you is my favorite.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap 💖</div>
+          <div class="card-face card-back"><img src="pic/love2.jpeg"><p>You are my forever hug.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap 💞</div>
+          <div class="card-face card-back"><img src="pic/love1.jpeg"><p>Your arms are my safe place.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap 💘</div>
+          <div class="card-face card-back"><img src="pic/love2.jpeg"><p>Every moment with you feels warm.</p></div>
+        </div></div>
+
+        <div class="card"><div class="card-inner">
+          <div class="card-face card-front">Tap ❤️‍🔥</div>
+          <div class="card-face card-back"><img src="pic/love3.png"><p>You make my heart feel home.</p></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="message">
+      Buggiiii, your hugs are my peace, my comfort, my happiness.
+      Until I can hold you for real, this is my warm hug for you ❤️
+    </div>
+
+    <button class="btn" onclick="showPromise()">Promise Hug 🤍</button>
+
+    <div class="signature">— #Ayushyam 💕</div>
+
+
+  </div>
+
+  <!-- Promise Popup -->
+  <div class="promise" id="promiseBox">
+    <div class="promise-card">
+      <div class="hug-anim">
+        <div class="arm left"></div>
+        <div class="heart">❤️</div>
+        <div class="arm right"></div>
+      </div>
+      <h2>I Promise You 🤍</h2>
+      <p>
+        No matter how far or close we are,<br>
+        my arms will always be your home.<br><br>
+        I promise comfort on hard days,<br>
+        warmth on lonely nights,<br>
+        and hugs that say<br>
+        “I’m here. Always.”
+      </p>
+      <button class="btn" onclick="closePromise()">Hold me forever 🤍</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+
+<!-- ✅ SIDE FLIP CARDS (ADD HERE) -->
+<div class="side-cards" id="sideCards">
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">Tap 💕</div>
+      <div class="flip-back">Forever my comfort 🤍</div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">Tap 💖</div>
+      <div class="flip-back">My safe place always</div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-inner">
+      <div class="flip-front">Tap 💞</div>
+      <div class="flip-back">Hugs that heal everything</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+
+
+</html>
