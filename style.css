@@ -263,7 +263,7 @@ body {
 /* Flip Card */
 .flip-card {
   width: 220px;
-  height: 130px;
+  height: 150px;
   perspective: 1000px;
   cursor: pointer;
 }
